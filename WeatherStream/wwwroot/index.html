@@ -1,0 +1,43 @@
+﻿﻿
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ASP.NET Core Weather Forcaster</title>
+    <link href="Forcaster.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Testing SignalR in Docker</h1>
+
+    <input type="button" id="start" value="Start Forcast" />
+    <input type="button" id="close" value="Stop Forcast" disabled="disabled" />
+    <input type="button" id="reset" value="Reset" />
+
+    <h2>Live Forcast Table</h2>
+    <div id="forcastTable">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Date</th>
+                    <th>Temp,C</th>
+                    <th>Temp,F</th>
+                    <th>Forcast</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>Live Weather Forcaster</h2>
+    <div id="forcaster">
+        <div class="inner">
+            <ul position="absolute">
+            </ul>
+        </div>
+    </div>
+
+    <script src="lib/signalr.min.js"></script>
+    <script src="lib/forcaster.js"></script>
+</body>
+</html>
